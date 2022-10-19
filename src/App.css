@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sunflower", sans-serif;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.sub-container {
+  max-width: 600px;
+  width: 100%;
+  height: 450px;
+  margin: 150px auto 0;
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.125);
+}
+
+.sub-container .left {
+  width: 50%;
+  height: 100%;
+  background: #494f57;
+}
+.sub-container .right {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 40px 35px 0;
+  position: relative;
+}
+.sub-container .left .title {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 40px 0 0 50px;
+  font-weight: bold;
+}
+.sub-container .right .title {
+  color: #6e8d30;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+.right .input {
+  margin: 5px 0 15px;
+  width: 100%;
+  padding: 8px;
+}
+
+.btn {
+  margin: 5px 0 15px;
+  background: #494f57;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #fff;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+.btn:hover {
+  -moz-box-shadow: 1px 1px 5px #999;
+  -webkit-box-shadow: 1px 1px 5px #999;
+  box-shadow: 1px 1px 5px #999;
+}
+.weather-desc {
+  padding: 80px 0 0 30px;
+}
+.weather-desc p {
+  font-size: 18px;
+  color: #fff;
+  padding: 8px;
+}
+
+.background-img-sunny {
+  background: linear-gradient(rgba(12, 10, 10, 0.45),
+      rgba(12, 10, 10, 0.45)),
+    url("https://bridgewaterhigh.org/wp-content/uploads/2018/06/landscape-1844229_960_720.png") !important;
+  background-repeat: round;
+}
+
+.background-img-rainy {
+  background: linear-gradient(rgba(12, 10, 10, 0.45),
+      rgba(12, 10, 10, 0.45)),
+    url("https://freedesignfile.com/upload/2018/03/Rainy-days-background-vector.jpg") !important;
+  background-repeat: round;
+}
+
+.background-img-cloudy {
+  background: linear-gradient(rgba(12, 10, 10, 0.45),
+      rgba(12, 10, 10, 0.45)),
+    url("https://photokip.com/upload/2018/08/21/20180821085101-b6e7ef91.jpg") !important;
+  background-repeat: round;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .sub-container {
+    flex-direction: column;
+    max-width: 400px;
+    height: auto;
+    margin-top: 30px;
+  }
+  .sub-container .left {
+    width: 100%;
+    height: 250px;
+  }
+  .sub-container .right {
+    width: 100%;
+    padding: 20px 35px 0;
+    height: 250px;
+  }
+  .weather-desc {
+    padding: 20px 0 0 30px;
+  }
+  .sub-container .right .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .sub-container .left .title {
+    font-size: 24px;
+    margin: 30px 0 0 40px;
+  }
+  .right .input {
+    margin-bottom: 10px;
+  }
+  .btn {
+    margin: 20px 0 30px 0;
+    padding: 10px;
+  }
+}
+
